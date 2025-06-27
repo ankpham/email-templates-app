@@ -10,11 +10,19 @@
                 user-select: none; /* Standard syntax */
             }
             .container {
+                position: relative;
                 background-color: rgb(248, 248, 248);
-                width: 500px;
-                height: 400px;
+                width: 550px;
+                height: 430px;
                 padding: 10px;
                 border: rgb(165, 165, 165) solid 1px;
+            }
+            .container .image-container {
+                padding: 20px;
+                height: 60px;
+            }
+            .container .image-container img {
+                height: 80px;
             }
             .text-container {
                 margin: auto;
@@ -25,6 +33,7 @@
                 margin-top: 20px;
             }
             h1 {
+                margin: auto;
                 letter-spacing: 3px;
                 border: rgb(151, 151, 151) solid 3px;
                 height: 55px;
@@ -35,18 +44,28 @@
                 -ms-user-select: text; /* IE 10 and IE 11 */
                 user-select: text; /* Standard syntax */
             }
+            .container span {
+                position: absolute;
+                bottom: 5px;
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="image-container">
-                <img src="https://www.hvmatl.org/images/gxlogo.webp"/>
+                <img src="https://hvmatl.s3.us-east-2.amazonaws.com/gallery/assets/gxlogo-2.png"/>
             </div>
             <div class="text-container">
                 <h3>Below is your email verification code for the volunteer form:</h1>
                 <br>
                 <h1>123456</h1>
             </div>
+            <span>
+                Copyright &#169; 2025 All rights reserved | GX CTTDVN - ATL
+            </span>
         </div>
     </body>
 </html>

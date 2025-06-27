@@ -2,14 +2,22 @@
 <html>
     <head>
         <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10 and IE 11 */
+                user-select: none; /* Standard syntax */
+            }
             .container {
+                position: relative;
                 background-color: rgb(252, 252, 252);
-                width: 400px;
-                height: 250px;
+                width: 450px;
+                height: 350px;
                 border: rgb(238, 238, 238) solid 1px;
-                padding: 20px;
             }
             .container .image-container {
+                padding: 20px;
                 height: 40px;
             }
             .container .image-container img {
@@ -20,24 +28,37 @@
                 font-family: Arial, Helvetica, sans-serif;
                 line-height: 25px;
                 padding: 10px;
+                padding-top: 20px;
                 border: rgb(238, 238, 238) solid 1px;
-                height: 150px
+                height: 150px;
+                width: 400px;
+                margin: auto;
+            }
+            .container span {
+                position: absolute;
+                bottom: 5px;
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="image-container">
-                <img src="https://www.hvmatl.org/images/gxlogo.webp"/>
+                <img src="https://hvmatl.s3.us-east-2.amazonaws.com/gallery/assets/gxlogo-2.png"/>
             </div>
             <br>
             <p>
-                You have successfully submitted your volunteer application form! 
+                <i style="color: rgb(21, 199, 21);">&#10004;</i> You have successfully submitted your volunteer application form! 
                 <br>
                 <br>
                 Your application will be reviewed by our Safe Environment Team and you will need approval
                 before you can volunteer.
             </p>
+            <span>
+                Copyright &#169; 2025 All rights reserved | GX CTTDVN - ATL
+            </span>
         </div>
     </body>
 </html>
